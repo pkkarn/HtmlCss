@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+/**********************/
+/*Header and Basic Setup*/
+/**********************/
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.55))/*Adding Image Over With Gradient*/, url(img/hero.jpg);
+    background-size: cover; /*Image To Fit*/
+    background-position: center; /*Centering Image*/
+    height: 100vh;
+}
+
+h1{
+    margin: 0;
+    font-size: 240%; /*It will resize their size according to Html font-size*/
+    font-weight: 300;  /*Changing Font Thickness*/
+    text-transform: uppercase;  /*Text Transform UpperCase */
+    letter-spacing: 1px;  /*letter Spacing*/
+    word-spacing: 4px;  /*Words Spacing*/
+}
+
+.hero-text-box{
+    position: absolute;  /* Adjust Size with according you */
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /*Scaling down images, rotating, etc*/
+    color: white;
+}
+
+/**********************/
+/*Button Customization*/
+/**********************/
+
+.btn:link,.btn:visited{
+    display: inline-block; /*Button Overlaping Fix in one line*/
+    margin-top: 5px;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 2.2s, border 0.2s, color 0.2s, margin-right 1s ease-in-out; /*Transition use to set the time between changing*/
+    
+}
+
+.btn-full:link:hover, .btn-full:visited:hover{
+    background-color: #cf6d17;
+    color: white;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+
+.btn-full:link,.btn-full:visited{
+    background-color: #e67e22;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-ghost:link,.btn-ghost:visited{
+    background-color: #fff;
+    border: 1px solid black;
+    color: #000;
+}
+
+.btn-ghost:link:hover,.btn-ghost:visited:hover{
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/*Logo Design*/
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/*Main Navbar*/
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    float: left;
+    padding: 5px 15px;
+    margin-left: 40px;
+}
+
+.main-nav li a:link, .main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;  /* Font Percentange based on Html 18px Font-size*/
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;  /*Main Problem - It will allow your border best*/
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover, .main-nav li a:active{
+    border-bottom: 2px solid #cf6d17;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

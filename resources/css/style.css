@@ -124,16 +124,99 @@ h1{
     border-bottom: 2px solid #cf6d17;
 }
 
+.section-feature {
+    margin: 0px 0px;
+    padding: 40px;
+    transition: background-color 1.0s;
+}
+
+.section-feature:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.long-copy{
+    padding: 10px 0px;
+    width: 70%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.section-feature{
+    text-align: center;
+}
+
+.section-feature .row{
+    border-bottom: 1px solid #000;
+}
 
 
+section h3,h2{
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    
+}
+
+h2:after{    /*Content just after h2 tag*/
+    display: block;  /* display this as a block */
+    height: 2px;   /*Keep the height 2px*/
+    background-color: #e67e22;  
+    content: " ";  /* h2:after block we don't want to write anything */
+    width:100px;   /* H2 size according 100px */
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.section-feature p{
+    text-transform: capitalize;
+    font-size: 90%;
+    word-spacing: 2px;
+    line-height: 22px;
+    font-weight: 300;
+}
 
 
+/************************/
+/*****Section Meals******/
+/************************/
 
+.section-meals{
+    padding-top: 0px;
+}
 
+.meals-showcase {
+    list-style: none;
+    width: 100%;  /* Full Size Ul list*/
+    margin: 0px auto; /*Margin 0 and center */
+}
 
+.meals-showcase li {
+    display: block;  /*Li each block*/
+    float: left;  /*left goes float */
+    width: 25%;  /* 25% of full meal-case (100%) */
+}
 
+.meal-photo{  
+    width: 100%;   /* width 100% = mealcase li 25% */
+    overflow: hidden;  /*Overlaping Image Hover Fix and It will fix it inside the box Not Overlap the box*/
+    /* overflow - Nothing inside this box will be goes beyond the width (hidden)*/
+    margin: 0;  /*Margin is 0*/
+    background-color: #000;
+}
 
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;  /*Means It will adjust size according to there parents meal-showcase li*/  /*Image Photo 100% = meal photo*/
+    height: auto;  
+    transform: scale(1.15);   /* Scale 1.5 but uder the boundries = overflow*/
+    transition: transform 0.5s, opacity 0.5s ; /*Animation*/
+}
 
+.meal-photo img:hover{
+    transform: scale(1.03);  /* Hover Scale down 1.03*/
+    opacity: 1;
+}
 
 
 
